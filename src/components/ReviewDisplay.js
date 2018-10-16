@@ -64,6 +64,11 @@ import React, { Component } from 'react'
           </div>
           <hr/>
         </div>)
+      } if (this.props.displayState === 'createUser') {
+        return (
+          <div className='ReviewCard'>
+          <h4 className='subtitle'>Enter Log In Information</h4>
+        </div>)
       } if (this.props.displayState === 'default')  {
         return (
           <div className='ReviewCard'>

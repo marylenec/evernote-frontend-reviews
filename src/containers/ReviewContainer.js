@@ -16,7 +16,8 @@ import SearchBar from '../components/SearchBar';
       selectedReview: null,
       newReview: {},
       displayStatus: 'default',
-      searchTerm: ""
+      searchTerm: "",
+      createUser: false
     }
 
     componentDidMount() {
@@ -223,6 +224,18 @@ import SearchBar from '../components/SearchBar';
     }
     }
 
+    handleCreateUser = () => {
+      this.setState({
+        createUser: !this.state.createUser
+      })
+      if (this.state.createUser === true) {
+        this.setState ({
+          displayStatus: 'createUser'
+        })
+      }
+    }
+
+
     render() {
       return (
         <div>
@@ -232,7 +245,9 @@ import SearchBar from '../components/SearchBar';
             <SearchBar handleSearchTerm = {this.handleSearchTerm}/>
             </div>
             <div className="col-md-6">
-              <LoginForm handleChange={this.handleChange} handleSubmit={this.handleSubmit} currentUser={this.state.currentUser} handleLogOut={this.handleLogOut} />
+              <LoginForm
+              handleChange={this.handleChange} handleSubmit={this.handleSubmit} currentUser={this.state.currentUser} handleLogOut={this.handleLogOut} handleCreateUser={this.handleCreateUser}
+              />
             </div>
           </div>
           <div className="row">

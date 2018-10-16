@@ -20,7 +20,10 @@ class LoginForm extends Component {
             <div className="form-group mx-sm-3">
               <button className="btn btn-primary" type="submit">Log In</button>
             </div>
-          </form> }
+            <div className="form-group mx-sm-3" style={{cursor:'pointer'}}>
+              <small onClick={(e) => this.props.handleCreateUser()} >Create an Account</small>
+            </div>
+          </form>}
           </React.Fragment>
   );
   }
