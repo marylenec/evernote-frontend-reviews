@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title {
+  text-align: center;
+  padding: 20px 0px;
+  background-color: #f2d0ea;
+  text-transform: uppercase;
+}
+
+.form-control {
+  margin: 10px 0px;
+}
+
+.form-inline.right {
+  right: 0;
+}
+
+.form-inline.left {
+  left: 0;
+}
+
+.btn-primary {
+  background-color: #f2d0ea;
+  border: solid 1px #f2d0ea;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #EE97F2;
+  border: solid 1px #EE97F2;
+  color: #000;
+}
+
+.row {
+  margin: 0;
+}
+
+.ReviewList {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  width: 300px;
+  height: 500px;
+}
+
+.ReviewCard {
+  font-size: .9em;
+  cursor: pointer;
+}
+
+h4.card-text, h4.subtitle {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.rating {
+  float: right;
+  font-size: .8em;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.right {
+  float: right;
+  margin: 10px 0px;
+}
+
+.editForm input {
+  width: 100%
+}
+
+.editForm button {
+  margin-right: 10px;
+}
+
+.new-section {
+  margin: 30px 0px;
+}
+
+.new-section>button {
+  margin: 0 auto;
+  display: inherit;
+}
